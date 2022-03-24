@@ -1,5 +1,6 @@
 import csv
 import module_01
+import module_02
 
 
 my_wedding = module_01.my_wedding
@@ -17,3 +18,9 @@ with open("my_school.csv", "w+") as my_wedding:
     filewriter.writerow(["History", "Walugembe Simon"])
     filewriter.writerow(["Agriculture", "Mugabi Timothy"])
     filewriter.writerow(["Techinical Drawing", "Sabiti Nicholas"])
+
+my_school = module_02.my_wedding
+
+with open("my_school.csv", "r") as my_school:
+    for line in my_school:
+        print(line)
